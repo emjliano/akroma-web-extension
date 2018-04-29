@@ -10,10 +10,12 @@
 
 html,
 body {
-  font-family: Roboto, Arial;
-  color: #4d4d4d;
-  font-weight: 300;
-  background: #f7f7f7;
+	background: url("images/bg-blocks.png");	/*AKA*/
+	font-family: Work Sans;	/*AKA*/
+	font-style: normal;	/*AKA*/
+	font-weight: 400;	/*AKA*/
+	color: #fff;	/*AKA*/
+
   width: 100%;
   height: 100%;
   margin: 0;
@@ -57,7 +59,7 @@ a {
 }
 
 a:hover {
-  color: #df6b0e;
+  color: #fff;	/*AKA*/
 }
 
 input.large-input,
@@ -170,7 +172,7 @@ input.large-input {
     min-width: 5rem;
     padding: .2rem .8rem .9rem;
     color: $dusty-gray;
-    font-family: Roboto;
+    font-family: Work Sans;
     font-size: 1.1rem;
     line-height: initial;
     text-align: center;
