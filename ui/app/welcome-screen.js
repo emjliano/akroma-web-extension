@@ -25,18 +25,25 @@ class WelcomeScreen extends Component {
 
         h('div.welcome-screen__info', [
 
-          h(Mascot, {
-            animationEventEmitter: this.animationEventEmitter,
-            width: '225',
-            height: '225',
+          // h(Mascot, {
+          //   animationEventEmitter: this.animationEventEmitter,
+          //   width: '225',
+          //   height: '225',
+          // }),
+
+          h('img', {
+            style: {
+              width: '225',
+              height: '225',
+            },
+            src: 'images/icon-512.png',
           }),
 
-          h('div.welcome-screen__info__header', 'Welcome to MetaMask Beta'),
+          h('div.welcome-screen__info__header', 'Welcome to Akroma'),
 
-          h('div.welcome-screen__info__copy', 'MetaMask is a secure identity vault for Ethereum.'),
+          h('p.welcome-screen__info__copy', 'Akroma is a wallet and identity vault.'),
 
-          h('div.welcome-screen__info__copy', `It allows you to hold ether & tokens,
-            and serves as your bridge to decentralized applications.`),
+          h('p.welcome-screen__info__copy', `It allows you to hold AKA & tokens, and serves as your bridge to decentralized applications.`),
 
           h('button.welcome-screen__button', {
             onClick: this.initiateAccountCreation,
