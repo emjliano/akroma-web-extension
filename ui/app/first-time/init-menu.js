@@ -54,8 +54,16 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
 
     h('.initialize-screen.flex-column.flex-center.flex-grow', [
 
-      h(Mascot, {
-        animationEventEmitter: this.animationEventEmitter,
+      // h(Mascot, {
+      //   animationEventEmitter: this.animationEventEmitter,
+      // }),
+
+      h('img', {
+        style: {
+          width: '225',
+          height: '225',
+        },
+        src: 'images/icon-512.png',
       }),
 
       h('h1', {
@@ -138,17 +146,17 @@ InitializeMenuScreen.prototype.renderMenu = function (state) {
         }, this.context.t('importDen')),
       ]),
 
-      h('.flex-row.flex-center.flex-grow', [
-        h('p.pointer', {
-          onClick: this.showOldUI.bind(this),
-          style: {
-            fontSize: '0.8em',
-            color: '#aeaeae',
-            textDecoration: 'underline',
-            marginTop: '32px',
-          },
-        }, 'Use classic interface'),
-      ]),
+      // h('.flex-row.flex-center.flex-grow', [
+      //   h('p.pointer', {
+      //     onClick: this.showOldUI.bind(this),
+      //     style: {
+      //       fontSize: '0.8em',
+      //       color: '#aeaeae',
+      //       textDecoration: 'underline',
+      //       marginTop: '32px',
+      //     },
+      //   }, 'Use classic interface'),
+      // ]),
 
     ])
   )
